@@ -1,0 +1,49 @@
+.search-form{
+    width: 100%;
+    max-width: 680px;
+}
+
+.search-form-elem{
+    padding: 1.4rem 2.8rem;
+    border-radius: 3.8rem;
+}
+.search-form-elem .form-control{
+    font-size: 2rem;
+    padding: 0.6rem;
+}
+.search-form-elem .form-control::placeholder{
+    opacity: 0.9;
+}
+/* SearchForm.css */
+
+/* ... (previous styles) */
+
+
+.search-form-elem {
+    position: relative; /* Add position relative to the search bar container */
+    width: 100%; /* Ensure the search bar takes full width */
+  }
+  
+  .search-form-elem input {
+    border: none; /* Remove border from the input */
+    border-bottom: 2px solid #ccc; /* Add border only to the bottom */
+    width: 100%; /* Ensure the input takes full width */
+    padding: 0.5rem; /* Add padding to the input */
+  }
+  
+  /* Add animation line using ::before pseudo-element */
+  .search-form-elem::before {
+    content: ''; /* Create an empty pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Initial width */
+    height: 2px;
+    background-color: var(--purple-color); /* Animation line color */
+    transition: width 0.3s ease; /* Add transition for animation */
+  }
+  
+  /* Animate the line on input focus */
+  .search-form-elem input:focus + ::before {
+    width: 100%; /* Expand the width of the line on focus */
+  }

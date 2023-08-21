@@ -1,0 +1,187 @@
+.navbar{
+    padding: 1.rem 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding-bottom: 1rem;
+}
+.navbar-brand{
+    width: 60px;
+    height: auto;
+}
+.navbar-brand span{
+    margin-left: 3rem;
+}
+.brand-and-toggler{
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+.brand-name {
+    font-size: 3.3rem; /* Increase font size for "Library" */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+    font-weight: 500!important;
+    opacity: 0.8;
+}
+
+/* Animation on hover */
+.brand-name:hover {
+    transform: scale(1.1); /* Scale the text on hover */
+    color: var(--purple-color); /* Change text color on hover */
+}
+.navbar-content{
+    display: flex;
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Center vertically */
+    width: 85%;
+}
+.navbar-toggler-btn{
+    transition: var(--transition);
+    z-index: 11;
+}
+.navbar-collapse{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background-color: var(--black-color);
+    height: 100%;
+    width: 280px;
+    display: flex;
+    padding: 10rem 3rem 0 3rem;
+    transform: translatex(100%);
+    transition: var(--transition);
+}
+.show-navbar-collapse{
+    transform: translateX(0);
+}
+.nav-item{
+    margin-bottom: 1.4rem;
+}
+.nav-link{
+    transition: var(--transition);
+}
+.nav-link:hover{
+    color: var(--purple-color);
+}
+/* Navbar.css */
+/* Navbar.css */
+
+/* ... (other styles) */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.show-dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* ... (other styles) */
+
+
+/* ... (previous CSS rules) */
+
+/* Add this section for the logo animation */
+.logo {
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+  }
+  
+  /* Animation on hover */
+  .logo:hover {
+    transform: scale(1.1); /* Scale the logo on hover */
+  }
+  
+  /* ... (rest of the CSS rules) */
+  .logo-wrapper {
+    display: flex;
+    align-items: center; /* Vertically align logo and text */
+    size: 4;
+  }
+  /* Add styles for line animation */
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 3rem;
+}
+
+.nav-item {
+    margin-bottom: 2rem;
+    position: relative; /* Required for pseudo-elements */
+}
+
+.nav-item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--purple-color);
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::before {
+    width: 100%; /* Expand the line on hover */
+}
+/* Navbar.css */
+
+/* ... (previous CSS rules) */
+
+/* Update styles for dropdown menu */
+.nav-item {
+    position: relative;
+}
+
+
+/* ... (rest of the CSS rules) */
+
+
+@media screen and (min-width: 992px){
+    .navbar-collapse{
+        position: relative;
+        height: auto;
+        padding: 0;
+        width: 100%;
+        background-color: transparent;
+        transform: translateX(0);
+        justify-content: flex-end;
+    }
+    .navbar-toggler-btn{
+        display: none;
+    }
+    .nav-item{
+        margin-bottom: 0;
+        margin-left: 2.8rem;
+        padding-top: 1.6rem;
+        margin-top:1.0rem
+    }
+    .nav-link{
+        color: var(--black-color);
+        font-size: 3.3rem;
+        font-weight: 500!important;
+        opacity: 0.8;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 3rem; /* Add some padding at the bottom */
+    }
+}

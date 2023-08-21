@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#3498db" stroke-width="6">
+    <animate attributeName="stroke-dasharray" dur="2s" values="5 320;85 320;85 320;5 320" repeatCount="indefinite" />
+    <animate attributeName="stroke-dashoffset" dur="2s" values="0;-40;-124;-218" repeatCount="indefinite" />
+  </circle>
+</svg>

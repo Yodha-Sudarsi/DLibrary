@@ -1,0 +1,61 @@
+/* Improved About.css */
+
+/* Overall section styling */
+.about {
+    padding: 3rem 0;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Grid layout for content */
+  .about-content {
+    display: grid;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  /* Title styling */
+  .section-title h2,
+  .about-title {
+    margin: 0;
+    color: #333;
+  }
+  
+  /* Image styling */
+  .about-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Text styling */
+  .about-text p {
+    margin: 1.8rem 0;
+    opacity: 0.8;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Media query for larger screens */
+  @media screen and (min-width: 800px) {
+    .about-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    /* Adjustments for larger screens */
+    .about-title {
+      margin-top: 0;
+      font-size: 28px;
+    }
+  
+    .about-img img {
+      margin-left: 0;
+    }
+  }
+  
